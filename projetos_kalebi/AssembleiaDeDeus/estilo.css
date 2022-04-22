@@ -1,4 +1,23 @@
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+body {
+    background-color: rgb(255, 243, 227);
+    color: rgba(0, 0, 0, 1);
+}
+
+/* editar imagem logo */ 
+
 .container {
-    width: 500px;
-    height: 500px;
+    border: 5px solid white;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+    border-top: start;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
 }
