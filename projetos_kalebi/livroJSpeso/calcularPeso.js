@@ -19,5 +19,35 @@ function calcularPeso() {
         return;
     }
 
-    
+    // se altura vazio (0) ou NaN: Not-a-Number (um texto for infomado, ex.)
+    if(altura == 0 || isNaN(altura)) {
+        alert("Por favor, infome a altura corretamente...");
+        inAltura.focus();
+        return;
+    }
+
+    // se masculino(significa se masculino == true)
+    if(masculino) {
+        var peso = 22 * Math.pow(altura, 2); // Math.pow elevaa a quadrado
+    } else {
+        var peso = 21 * Math.pow(altura, 2);
+    }
+
+    // apresenta a resposta (altera o conteudo da linha outResposta)
+    outResposta.textContent = nome + ": Seu peso ideal é " + peso.toFixed(3) + " kg";
+
 }
+
+// cria referência ao elemento btCalcular e registra evento associado a calcularPeso
+var btResultado = document.getElementById("btCalcular")
+btCalcular.addEventListener("click", calcularPeso);
+
+function limparCampos() {
+    // recarrega a pagina
+    location.reload();
+   // posiciona (joga o foco) no elemento inNome
+   document.getElementById("inNome").focus(); 
+}
+
+var btLimpar = document.getElementById("btLimpar");
+btLimpar.addEventListener("click", limparCampos);
