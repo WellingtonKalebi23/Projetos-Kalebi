@@ -9,7 +9,7 @@ body {
 }
 
 .interface {
-    width: 900px;
+    width: 800px;
     margin: 250px -5px 0px 5px;
     box-shadow: 0px 0px 3px black;
     padding: 10px 10px 10px 10px;
@@ -65,7 +65,38 @@ body {
 #biblia {
     display: block;
     position: absolute;
-    width: 700px;
+    width: 1341px;
     height: 205px;
     top: 0px;
+}
+
+aside#lateral {
+    margin-top: 250px;
+    display: block;
+    width: 480px;
+    float: right;
+    padding: 10px;
+    padding-bottom: 70px;
+    box-shadow: 0px 0px 3px black;
+}
+
+section {
+    display: block;
+    width: 600px;
+    float: left;
+}
+
+footer {
+    clear: both;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+footer#rodape {
+    text-align: center
+}
+
+footer a {
+    text-decoration: none;
 }
