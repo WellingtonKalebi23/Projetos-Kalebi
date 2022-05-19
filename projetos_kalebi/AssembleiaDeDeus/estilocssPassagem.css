@@ -1,6 +1,7 @@
 section#centro {
     display: block;
     width: 1200px;
+    height: 500px;
     margin-left: 50px;
-    padding: 15px;
+    padding: 18px;
 }
