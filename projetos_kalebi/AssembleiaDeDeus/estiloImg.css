@@ -1,17 +1,61 @@
 div#imgs {
-    display: block;
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
 }
 
 section#imgens {
     display: block;
     width: 1200px;
-    height: 500px;
+    height: 1200px;
     margin-left: 50px;
     padding: 15px;
 }
 
+div#imgs li {
+    list-style-type: none;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid black;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+}
+
 div#imgs li#foto1 {
     background-image: url(../AssembleiaDeDeus/imagens/galeria1.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+}
+
+div#imgs li#foto2 {
+    background-image: url(../AssembleiaDeDeus/imagens/galeria2.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+}
+
+div#imgs li#foto3 {
+    background-image: url(../AssembleiaDeDeus/imagens/galeria3.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+}
+
+div#imgs li#foto4 {
+    background-image: url(../AssembleiaDeDeus/imagens/galeria4.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+}
+
+div#imgs li#foto5 {
+    background-image: url(../AssembleiaDeDeus/imagens/galeria5.jpg);
+    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
 }
