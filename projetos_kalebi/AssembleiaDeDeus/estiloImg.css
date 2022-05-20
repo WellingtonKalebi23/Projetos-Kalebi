@@ -1,6 +1,6 @@
 div#imgs {
     width: 700px;
-    margin: 0 auto;
+    margin: -35px auto;
     padding: 50px;
     overflow: hidden;
     list-style: none;
@@ -17,9 +17,9 @@ section#imgens {
 div#imgs li {
     list-style-type: none;
     float: left;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
     border: 5px solid black;
     background-color: #ffffff;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
