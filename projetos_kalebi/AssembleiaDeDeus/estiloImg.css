@@ -19,10 +19,40 @@ div#imgs li {
     float: left;
     width: 200px;
     height: 200px;
-    margin: 5px;
-    border: 5px solid black;
+    margin: 10px;
+    border: 5px solid rgb(255, 252, 252);
     background-color: #ffffff;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    -webkit-transition: all .4s ease-in;
+}
+
+div#imgs li:hover {
+    -webkit-transform: scale(1.5);
+}
+
+div#imgs li#foto1 {
+    background-position: 0px 0px;
+    background-size: 300px 300px;
+}
+
+div#imgs li#foto2 {
+    background-position: 0px 0px;
+    background-size: 300px 300px;
+}
+
+div#imgs li#foto3 {
+    background-position: 0px 0px;
+    background-size: 300px 300px;
+}
+
+div#imgs li#foto4 {
+    background-position: 0px 0px;
+    background-size: 300px 300px;
+}
+
+div#imgs li#foto5 {
+    background-position: 0px 0px;
+    background-size: 300px 300px;
 }
 
 div#imgs li#foto1 {
