@@ -26,16 +26,18 @@
 <section class="interface" id="esquerda">
     <form>
         <fieldset id="usuario"><legend>Identificação do Usuário</legend>
-          <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+          <p><label>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></label></p>
           <p>Senha: <input type="passoword" name="tSenha" size="8" maxlength="8" placeholder="8 digitos"></p>
           <p>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
         </fieldset>
-        
+        <fieldset>
+          <P>Data de Nascimento: <input type="date" name="tData" id="cData"></P>
+        </fieldset>
         <fieldset id="endereco"><legend>Endereço do Usuário</legend>
-          Logradouro:
-          Número:
-          Estado:
-          Cidade:
+          <p>Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua,Av,Trav..."></p>
+          <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
+          <p>Estado:</p>
+          <p>Cidade:</p>
         </fieldset>
   
         <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
