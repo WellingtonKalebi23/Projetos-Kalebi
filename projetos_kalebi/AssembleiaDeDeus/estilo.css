@@ -30,8 +30,8 @@ body {
 
 #menu {
     display: block;
-    background: red;
 }
+
 
 #menu ul {
     list-style: none;
@@ -39,6 +39,7 @@ body {
     position: absolute;
     top: 190px;
     left: 350px;
+    margin-left: -360px;
 }
 
 #menu li {
@@ -47,6 +48,8 @@ body {
     padding: 10px;
     margin: 4px;
     transition: 1s;
+    display: center;
+    margin-left: 160px;
 }
 
 #menu li:hover {
@@ -145,4 +148,10 @@ video {
 
 audio {
     width: 475px;
+}
+
+.menu2 {
+    background-color: #dddd;
+    width: 1350px;
+    
 }
