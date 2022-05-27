@@ -30,6 +30,7 @@ body {
 
 #menu {
     display: block;
+    background: red;
 }
 
 #menu ul {

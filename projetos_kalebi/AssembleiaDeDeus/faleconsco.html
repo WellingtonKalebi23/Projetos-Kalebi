@@ -6,43 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assembleia de Deus Rio das Pedras</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloFaleconosco.css">
 </head>
 <body>
     <header>
         <div>
             <nav id="menu">
                <h1>Principal</h1>
-                <ul>
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="Passagem.html">Passagem</a></li>
-                  <li><a href="#galeria">Galeria</a></li>
-                  <li><a href="#agenda">Agenda</a></li>
-                  <li><a href="#fale">Fale conosco</a></li>
-                </ul>
+               <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Passagem.html">Passagem</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="faleconsco.html">Fale conosco</a></li>
+              </ul>
             </nav>
         </div>
        <img src="/projetos_kalebi/AssembleiaDeDeus/imagens/capa_ebook.jpg" alt="bible" id="biblia">
     </header>
-<section class="interface" id="esquerda">
-    <form>
+<section class="interface" id="centro">
+    <form method="post" id="fContado" action="mailto:wellingtonrdp16@gmail.com"> 
         <fieldset id="usuario"><legend>Identificação do Usuário</legend>
           <p><label>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></label></p>
-          <p>Senha: <input type="passoword" name="tSenha" size="8" maxlength="8" placeholder="8 digitos"></p>
-          <p>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
+          <p><label>Senha: <input type="passoword" name="tSenha" size="8" maxlength="8" placeholder="8 digitos"></label></p>
+          <p><label>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></label></p>
         </fieldset>
         <fieldset>
-          <P>Data de Nascimento: <input type="date" name="tData" id="cData"></P>
+          <P><label>Data de Nascimento: <input type="date" name="tData" id="cData"></label></P>
         </fieldset>
         <fieldset id="endereco"><legend>Endereço do Usuário</legend>
-          <p>Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua,Av,Trav..."></p>
-          <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
-          <p>Estado:</p>
-          <p>Cidade:</p>
+          <p><label>Rua: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua,Av,Trav..."></label> </p>
+          <p><label>Número: <input type="number" name="tNum" id="cNum" min="0" max="99999"></label></p>
+          <p><label>Estado: <select>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Bahia</option>
+          </select></label></p>
+          <p><label>Cidade: <input type="text" name="tCidade" list="cidades" placeholder="Sua Cidade">
+          <datalist id="cidades">
+            <option value="Piracicaba"></option>
+            <option value="Rio das Pedras"></option>
+            <option value="Capivari"></option>
+            <option value="Santa Barba do Oeste"></option>
+          </datalist></label></p>
         </fieldset>
   
         <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
-          Mensagem:
+          <p id="mensagem2"><label>Mensagem: </label>
+          <textarea name="tMsg" id="cMsg" cols="30" rows="5" placeholder="Digite aqui sua Mensagem"></textarea></p>
         </fieldset>
+        
+        <input type="submit" name="tEnviar" id="fotoEnviar">
       </form>
 </section>
     <footer id="rodape">
