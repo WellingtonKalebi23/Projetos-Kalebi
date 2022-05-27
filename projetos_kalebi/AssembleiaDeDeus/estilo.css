@@ -39,7 +39,7 @@ body {
     position: absolute;
     top: 190px;
     left: 350px;
-    margin-left: -360px;
+    margin-left: -342px;
 }
 
 #menu li {
@@ -152,6 +152,6 @@ audio {
 
 .menu2 {
     background-color: #dddd;
-    width: 1350px;
+    width: 1300px;
     
 }
